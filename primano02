@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package no2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Praktikum
+ */
+public class NO2 {
+
+    private static boolean p;
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // 2,3,5,7,11,13,17,19,23, dan 29.
+        int a, b;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Masukkan Bilangan ");
+        System.out.println("Awal : ");
+        a = in.nextInt();
+        System.out.println("Akhir : ");
+        b = in.nextInt();
+        System.out.println("Keluar Bilangan ");
+        System.out.println("Deret bilangan antar prima " + a + " dan " + b);
+        int y = a;
+        while (y <= b) {
+            boolean p = true;
+            for (int z = 2; z < y; z++);
+            if (y % b == 0) {
+                p = false;
+
+            }
+        }
+        if (p) {
+           
+            System.out.println(y + " ");
+
+        }
+        y++;
+
+    }
+
+}
